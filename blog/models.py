@@ -29,6 +29,6 @@ class Categury (models.Model):
     title = models.CharField(max_length=128,blank=False,null=False)
     cover = models.FileField(upload_to='files/categury_covers/',blank=False,null=False, validators=[validate_file_ext])
 
-    def __str__(self):
-        return self.title
+    #def __str__(self):
+      #  return self.title
 
